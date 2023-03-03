@@ -31,8 +31,5 @@ function displaDetailOrder() {
         orderEmail.innerHTML = localStorage.getItem('checkout-email-address');
         orderPaymentMethod.innerHTML = localStorage.getItem('checkout-payment-method');
     }
-
-
-
 };
 displaDetailOrder();
