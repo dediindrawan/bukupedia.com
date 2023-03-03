@@ -101,6 +101,7 @@
   font-size: var(--font-size);
   font-family: var(--font-roboto);
   color: var(--grey-color);
+  background-color: var(--white-color);
 }
 
 .input-section label {
