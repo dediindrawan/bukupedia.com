@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form | Sign Up</title>
+    <!-- connecting css file -->
+    <link rel="stylesheet" href="/user.form/sign.up/sign.up.css">
+    <!-- connecting cdn js icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- cover company image -->
+        <div class="cover-image">
+            <img src="/image.gallery/company-image-img.jpg" alt="cover-image">
+            <h2>Buku<span>pedia</span>.com</h2>
+        </div>
+
+        <!-- sign up form start -->
+        <form action="/user.form/sign.in/sign.in.html" method="get" id="sign-up-form">
+            <div class="title">
+                <h2>Buat Akun Baru</h2>
+            </div>
+
+            <!-- username -->
+            <div class="input-group">
+                <div class="input-section">
+                    <label for="username"><i class="fas fa-user"></i></label>
+                    <input type="text" name="username" id="username" placeholder="Nama Pengguna" autocomplete="off"
+                        autofocus style="text-transform: capitalize;">
+                    <div class="input-notification">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- email -->
+            <div class="input-group">
+                <div class="input-section">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" name="email" id="email" placeholder="Alamat Email" autocomplete="off">
+                    <div class="input-notification">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- password -->
+            <div class="input-group">
+                <div class="input-section">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" placeholder="Kata Sandi" autocomplete="off">
+                    <div class="input-notification">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- confirm password -->
+            <div class="input-group">
+                <div class="input-section">
+                    <label for="confirm-password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="confirm-password" placeholder="Konfirmasi Kata Sandi" autocomplete="off">
+                    <div class="input-notification">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- hide and show password -->
+            <div class="show-password">
+                <small><input type="checkbox" onclick="showPassword()"> Tampilkan Kata Sandi</small>
+            </div>
+
+            <!-- sign up button -->
+            <button type="submit" class="btn-sign-up">Registrasi</button>
+
+            <!-- sign in action anchor -->
+            <p>Sudah punya akun? <a href="/user.form/sign.in/sign.in.html">Masuk Sekarang</a></p>
+        </form>
+        <!-- sign up form end -->
+    </div>
+    <!-- container end -->
+
+    <!-- connecting javascript file -->
+    <script src="/user.form/sign.up/sign.up.js"></script>
+</body>
+
+</html>

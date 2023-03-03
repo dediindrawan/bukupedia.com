@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukupedia.com | Shop</title>
+    <!-- connecting css file -->
+    <link rel="stylesheet" href="/main.page/main.css">
+    <link rel="stylesheet" href="/main.page/shop/shop.css">
+    <!-- connecting cdn js icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- wrapper-header-top start -->
+    <header class="wrapper-header-top">
+        <!-- social media icon -->
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+
+        <!-- sign in options -->
+        <div class="sign-in-area">
+            <span style="color: var(--orange-color);">Baru</span>
+            <a href="/user.form/sign.in/sign.in.html">Masuk</a> |
+            <a href="/user.form/sign.up/sign.up.html">Registrasi</a>
+        </div>
+    </header>
+    <!-- wrapper-header-top end -->
+
+    <!-- wrapper-navbar start -->
+    <nav class="wrapper-navbar">
+        <!-- brand or logo -->
+        <div class="brand-logo">
+            <a href="/main.page/index.html">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </a>
+        </div>
+
+        <!-- page navigator -->
+        <ul id="navigation-item" class="nav-item">
+            <li><a href="/main.page/index.html">Beranda</a></li>
+            <li><a href="/main.page/about/about.html">Tentang</a></li>
+            <li><a href="#latest-product">Produk</a></li>
+            <li><a href="/main.page/contact/contact.html">Kontak</a></li>
+            <li><a href="/main.page/order/order.html">Pembelian</a></li>
+        </ul>
+
+        <!-- nav-side-menu start -->
+        <ul class="nav-side-menu">
+            <!-- search icon -->
+            <li><i class="fa-solid fa-magnifying-glass search-icon" onclick="searchIcon()"></i></li>
+
+            <!-- user icon -->
+            <li><i class="fa-solid fa-user user-icon" onclick="userIcon()"></i></li>
+
+            <!-- user-account start as box parent to show the detail user -->
+            <div id="user-account-box" class="user-account">
+                <span class="user-image">
+                    <label for="image-upload">
+                        <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                        <img id="my-image" class="user-avatar">
+                        <small class="camera-icon"><i class="fa-solid fa-camera"></i></small>
+                    </label>
+                    <p class="username" style="text-transform: capitalize;"></p>
+                </span>
+                <p class="email"></p>
+                <button type="submit" class="btn-sign-out">Keluar</button>
+            </div>
+            <!-- user-account end as box parent to show the detail user -->
+
+            <!-- cart icon -->
+            <li class="cart"><i class="fa-solid fa-cart-shopping cart-icon" onclick="cartIcon()"></i> <span
+                    class="total-cart">10</span></li>
+
+            <!-- toggle icon -->
+            <li class="toggle-icon"><i class="fa-solid fa-bars toggle-icon" onclick="toggleIcon()"></i></li>
+        </ul>
+        <!-- nav-side-menu end -->
+    </nav>
+    <!-- wrapper-navbar end -->
+
+    <!-- hero-image start -->
+    <header class="hero-image">
+        <h1>Produk Kami</h1>
+        <ul>
+            <li><a href="/main.page/index.html">Beranda</a></li>
+            /
+            <li>Produk</li>
+        </ul>
+    </header>
+    <!-- hero-image end -->
+
+    <!-- content-container start -->
+    <main class="content-container">
+        <!-- latest product list start -->
+        <section id="latest-product">
+            <h1>Produk Terbaru</h1>
+            <br>
+            <ul class="wrapper-product-item">
+                <li class="latest-product-item">
+                    <span class="price-item"><i class="fa-solid fa-tags"></i> Rp69.900,00</span>
+                    <figure class="item-image">
+                        <img src="/image.gallery/book-1-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Peony's World</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+                <li class="latest-product-item">
+                    <figure class="item-image">
+                        <span class="price-item"><i class="fa-solid fa-tags"></i> Rp79.900,00</span>
+                        <img src="/image.gallery/book-2-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Abisatya Acala</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+                <li class="latest-product-item">
+                    <figure class="item-image">
+                        <span class="price-item"><i class="fa-solid fa-tags"></i> Rp56.900,00</span>
+                        <img src="/image.gallery/book-3-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Digital Marketing</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+                <li class="latest-product-item">
+                    <figure class="item-image">
+                        <span class="price-item"><i class="fa-solid fa-tags"></i> Rp84.900,00</span>
+                        <img src="/image.gallery/book-4-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Pergi</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+                <li class="latest-product-item">
+                    <figure class="item-image">
+                        <span class="price-item"><i class="fa-solid fa-tags"></i> Rp99.900,00</span>
+                        <img src="/image.gallery/book-5-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Tenggelamnya Kapal Van Der Wijck</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+                <li class="latest-product-item">
+                    <figure class="item-image">
+                        <span class="price-item"><i class="fa-solid fa-tags"></i> Rp109.900,00</span>
+                        <img src="/image.gallery/book-6-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Perspektif Pendidikan Dalam Bingkai Ilmu Dan Tokoh</p>
+                        </figcaption>
+                    </figure>
+                    <form id="add-to-cart-form" class="form-add-to-cart" action="">
+                        <input type="number" name="total-item" id="total-item" placeholder="Qty" required>
+                        <button type="submit">Tambah ke keranjang</button>
+                    </form>
+                </li>
+            </ul>
+        </section>
+        <!-- latest product list end -->
+    </main>
+    <!-- content-container end -->
+
+    <!-- footer-container start -->
+    <footer class="footer-container">
+        <ul class="footer-content">
+            <div class="footer-title">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </div>
+            <li><i class="fa-solid fa-phone" style="cursor: auto;"></i> +62 897 4523 500</li>
+            <li><i class="fa-solid fa-envelope" style="cursor: auto;"></i> tanya@bukupedia.com</li>
+            <li><i class="fa-solid fa-house" style="cursor: auto;"></i> Bogor, Indonesia 16920</li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Blog Kami</p>
+            </div>
+            <li><a href="/main.page/index.html">Beranda</a></li>
+            <li><a href="/main.page/about/about.html">Tentang</a></li>
+            <li><a href="/main.page/shop/shop.html">Produk</a></li>
+            <li><a href="/main.page/contact/contact.html">Kontak</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Lainnya</p>
+            </div>
+            <li><a href="/user.form/sign.in/sign.in.html">Masuk</a></li>
+            <li><a href="/user.form/sign.up/sign.up.html">Registrasi</a></li>
+            <li><a href="/main.page/cart/cart.html">Keranjang</a></li>
+            <li><a href="/main.page/order/order.html">Pembelian</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Ikuti Kami</p>
+            </div>
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+    <!-- footer-container end -->
+
+    <!-- footer-copyright start -->
+    <footer class="copyright">
+        All Right Reserved &copy; <span class="years"></span> <a href="https://linktr.ee/dediindra_one"
+            target="_blank">Buku<span>pedia</span>.com</a>
+        <a href="#"><span class="back-to-top"><i class="fa-solid fa-chevron-up"></i></span></a>
+    </footer>
+    <!-- footer-copyright end -->
+
+    <!-- connecting javascript file -->
+    <script src="/main.page/main.js"></script>
+    <script src="/main.page/shop/shop.js"></script>
+</body>
+
+</html>

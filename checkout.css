@@ -1,0 +1,209 @@
+/* wrapper-header-top style areas */
+.hero-image {
+  width: 100%;
+  height: 250px;
+  margin-top: 110px;
+  background-image: url(/image.gallery/page-image-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image ul {
+  width: max-content;
+  margin-top: 1em;
+  display: flex;
+}
+
+.hero-image ul li a {
+  color: var(--purple-color);
+}
+
+.item-box {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.item-detail {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin-bottom: 1em;
+}
+
+.item-title-detail {
+  width: max-content;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+}
+
+/* form style all include */
+#checkout-form {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+}
+
+#checkout-form p {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+#checkout-form span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  width: 49%;
+  margin-bottom: 2em;
+}
+
+.input-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+}
+
+.input-section input,
+.input-section select {
+  width: 100%;
+  padding: 0.75em 0;
+  padding-right: 3em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: var(--font-size);
+  font-family: var(--font-roboto);
+  color: var(--grey-color);
+}
+
+.input-section label {
+  padding: 0 1em;
+}
+
+.input-section label i {
+  cursor: pointer;
+}
+
+.input-section select option {
+  color: var(--white-color);
+  background-color: var(--purple-color);
+}
+
+.input-section small {
+  position: absolute;
+  top: 4.15em;
+  z-index: 2;
+  visibility: hidden;
+  color: var(--red-color);
+}
+
+.input-notification i {
+  position: absolute;
+  top: 1.1em;
+  right: 1em;
+  visibility: hidden;
+}
+
+.error {
+  border: 2px solid var(--red-color);
+}
+
+.error small {
+  visibility: visible;
+  font-style: italic;
+}
+
+.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: var(--red-color);
+}
+
+.success {
+  border: 2px solid var(--green-color);
+}
+
+.success i.fa-check-circle {
+  visibility: visible;
+  color: var(--green-color);
+}
+
+.show-password {
+  margin-bottom: 1em;
+}
+
+.show-password input {
+  cursor: pointer;
+}
+
+#checkout-form button[type='submit'] {
+  width: 100%;
+  padding: 0.75em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--font-size);
+  font-family: var(--font-roboto);
+  color: var(--white-color);
+  background-color: var(--purple-color);
+}
+
+#checkout-form button[type='submit']:hover {
+  background-color: var(--grey-color);
+}
+
+#checkout-form a {
+  color: var(--purple-color);
+  transition: var(--transition);
+}
+
+#checkout-form a:hover {
+  text-decoration: underline;
+  color: var(--grey-color);
+}
+
+/* responsive mobile view style start here */
+
+/* responsive breakpoint on mobile max width 600px */
+@media screen and (max-width: 600px) {
+  /* wrapper-header-top style areas */
+  .hero-image {
+    height: 190px;
+  }
+
+  .hero-image h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+}

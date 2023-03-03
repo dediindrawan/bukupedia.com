@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukupedia.com | About</title>
+    <!-- connecting css file -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <!-- connecting cdn js icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- wrapper-header-top start -->
+    <header class="wrapper-header-top">
+        <!-- social media icon -->
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+
+        <!-- sign in options -->
+        <div class="sign-in-area">
+            <span style="color: var(--orange-color);">Baru</span>
+            <a href="sign.in.html">Masuk</a> |
+            <a href="sign.up.html">Registrasi</a>
+        </div>
+    </header>
+    <!-- wrapper-header-top end -->
+
+    <!-- wrapper-navbar start -->
+    <nav class="wrapper-navbar">
+        <!-- brand or logo -->
+        <div class="brand-logo">
+            <a href="index.html">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </a>
+        </div>
+
+        <!-- page navigator -->
+        <ul id="navigation-item" class="nav-item">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="shop.html">Produk</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+            <li><a href="order.html">Pembelian</a></li>
+        </ul>
+
+        <!-- nav-side-menu start -->
+        <ul class="nav-side-menu">
+            <!-- search icon -->
+            <li><i class="fa-solid fa-magnifying-glass search-icon" onclick="searchIcon()"></i></li>
+
+            <!-- user icon -->
+            <li><i class="fa-solid fa-user user-icon" onclick="userIcon()"></i></li>
+
+            <!-- user-account start as box parent to show the detail user -->
+            <div id="user-account-box" class="user-account">
+                <span class="user-image">
+                    <label for="image-upload">
+                        <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                        <img id="my-image" class="user-avatar">
+                        <small class="camera-icon"><i class="fa-solid fa-camera"></i></small>
+                    </label>
+                    <p class="username" style="text-transform: capitalize;"></p>
+                </span>
+                <p class="email"></p>
+                <button type="submit" class="btn-sign-out">Keluar</button>
+            </div>
+            <!-- user-account end as box parent to show the detail user -->
+
+            <!-- cart icon -->
+            <li class="cart"><i class="fa-solid fa-cart-shopping cart-icon" onclick="cartIcon()"></i> <span
+                    class="total-cart">10</span></li>
+
+            <!-- toggle icon -->
+            <li class="toggle-icon"><i class="fa-solid fa-bars toggle-icon" onclick="toggleIcon()"></i></li>
+        </ul>
+        <!-- nav-side-menu end -->
+    </nav>
+    <!-- wrapper-navbar end -->
+
+    <!-- hero-image start -->
+    <header class="hero-image">
+        <h1>Tentang Kami</h1>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            /
+            <li>Tentang</li>
+        </ul>
+    </header>
+    <!-- hero-image end -->
+
+    <!-- content-container start -->
+    <main class="content-container">
+        <!-- about start -->
+        <section id="about">
+            <div class="wrapper-about">
+                <figure>
+                    <img src="image.gallery/company-image-img.jpg" alt="Image">
+                </figure>
+                <figcaption>
+                    <h1>Kenapa harus memilih kami?</h1>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ad vero exercitationem dolorum
+                        explicabo, perferendis obcaecati. Cum assumenda totam ea, dolore explicabo eos. Corporis
+                        asperiores, sit voluptatibus tempore dignissimos iure!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae hic quam vero nesciunt?
+                        Recusandae necessitatibus omnis inventore quis vel laboriosam!</p>
+                    <div class="contact-us">
+                        <button type="submit" onclick="btnContactUs()">Hubungi Kami</button>
+                    </div>
+                </figcaption>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- reviews list start -->
+        <section class="reviews">
+            <h1>Review Klien</h1>
+            <br>
+            <ul class="wrapper-reviews">
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-1-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Ian Dolley</h4>
+                        </span>
+                    </figure>
+                </li>
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-2-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Christina</h4>
+                        </span>
+                    </figure>
+                </li>
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-3-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Midas Hofstra</h4>
+                        </span>
+                    </figure>
+                </li>
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-4-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Alice Lee</h4>
+                        </span>
+                    </figure>
+                </li>
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-5-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Ben O'bro</h4>
+                        </span>
+                    </figure>
+                </li>
+                <li class="content-reviews">
+                    <figure class="reviews-image">
+                        <img src="image.gallery/review-6-img.jpg" alt="Image">
+                        <figcaption>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat velit maiores
+                                quia fugit! Illo?</p>
+                        </figcaption>
+                        <div class="star-review">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="reviewer">
+                            <h4>Stephanie Liveran</h4>
+                        </span>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <!-- reviews list start -->
+
+        <!-- author list start -->
+        <section class="author">
+            <h1>Penulis Profesional</h1>
+            <br>
+            <ul class="wrapper-author">
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-1-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Tyler Nix</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-2-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Alisson Griffith</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-3-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Harps Joseph</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-4-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Aiony Haust</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-5-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Jade Aucamp</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="content-author">
+                    <figure class="author-image">
+                        <img src="image.gallery/author-6-img.jpg" alt="Image">
+                        <ul class="social-media-author">
+                            <a href="#">
+                                <li><i class="fa-brands fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                            </a>
+                        </ul>
+                        <figcaption class="author">
+                            <h4>Joanna Koletic</h4>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <!-- author list end -->
+    </main>
+    <!-- content-container end -->
+
+    <!-- footer-container start -->
+    <footer class="footer-container">
+        <ul class="footer-content">
+            <div class="footer-title">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </div>
+            <li><i class="fa-solid fa-phone" style="cursor: auto;"></i> +62 897 4523 500</li>
+            <li><i class="fa-solid fa-envelope" style="cursor: auto;"></i> tanya@bukupedia.com</li>
+            <li><i class="fa-solid fa-house" style="cursor: auto;"></i> Bogor, Indonesia 16920</li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Blog Kami</p>
+            </div>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="shop.html">Produk</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Lainnya</p>
+            </div>
+            <li><a href="sign.in.html">Masuk</a></li>
+            <li><a href="sign.up.html">Registrasi</a></li>
+            <li><a href="cart.html">Keranjang</a></li>
+            <li><a href="order.html">Pembelian</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Ikuti Kami</p>
+            </div>
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+    <!-- footer-container end -->
+
+    <!-- footer-copyright start -->
+    <footer class="copyright">
+        All Right Reserved &copy; <span class="years"></span> <a href="https://linktr.ee/dediindra_one"
+            target="_blank">Buku<span>pedia</span>.com</a>
+        <a href="#"><span class="back-to-top"><i class="fa-solid fa-chevron-up"></i></span></a>
+    </footer>
+    <!-- footer-copyright end -->
+
+    <!-- connecting javascript file -->
+    <script src="main.js"></script>
+    <script src="about.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukupedia.com | Checkout</title>
+    <!-- connecting css file -->
+    <link rel="stylesheet" href="/main.page/main.css">
+    <link rel="stylesheet" href="/main.page/checkout/checkout.css">
+    <!-- connecting cdn js icon font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- wrapper-header-top start -->
+    <header class="wrapper-header-top">
+        <!-- social media icon -->
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </ul>
+
+        <!-- sign in options -->
+        <div class="sign-in-area">
+            <span style="color: var(--orange-color);">Baru</span>
+            <a href="/user.form/sign.in/sign.in.html">Masuk</a> |
+            <a href="/user.form/sign.up/sign.up.html">Registrasi</a>
+        </div>
+    </header>
+    <!-- wrapper-header-top end -->
+
+    <!-- wrapper-navbar start -->
+    <nav class="wrapper-navbar">
+        <!-- brand or logo -->
+        <div class="brand-logo">
+            <a href="/main.page/index.html">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </a>
+        </div>
+
+        <!-- page navigator -->
+        <ul id="navigation-item" class="nav-item">
+            <li><a href="/main.page/index.html">Beranda</a></li>
+            <li><a href="/main.page/about/about.html">Tentang</a></li>
+            <li><a href="/main.page/shop/shop.html">Produk</a></li>
+            <li><a href="/main.page/contact/contact.html">Kontak</a></li>
+            <li><a href="/main.page/order/order.html">Pembelian</a></li>
+        </ul>
+
+        <!-- nav-side-menu start -->
+        <ul class="nav-side-menu">
+            <!-- search icon -->
+            <li><i class="fa-solid fa-magnifying-glass search-icon" onclick="searchIcon()"></i></li>
+
+            <!-- user icon -->
+            <li><i class="fa-solid fa-user user-icon" onclick="userIcon()"></i></li>
+
+            <!-- user-account start as box parent to show the detail user -->
+            <div id="user-account-box" class="user-account">
+                <span class="user-image">
+                    <label for="image-upload">
+                        <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                        <img id="my-image" class="user-avatar">
+                        <small class="camera-icon"><i class="fa-solid fa-camera"></i></small>
+                    </label>
+                    <p class="username" style="text-transform: capitalize;"></p>
+                </span>
+                <p class="email"></p>
+                <button type="submit" class="btn-sign-out">Keluar</button>
+            </div>
+            <!-- user-account end as box parent to show the detail user -->
+
+            <!-- cart icon -->
+            <li class="cart"><i class="fa-solid fa-cart-shopping cart-icon" onclick="cartIcon()"></i> <span
+                    class="total-cart">10</span></li>
+
+            <!-- toggle icon -->
+            <li class="toggle-icon"><i class="fa-solid fa-bars toggle-icon" onclick="toggleIcon()"></i></li>
+        </ul>
+        <!-- nav-side-menu end -->
+    </nav>
+    <!-- wrapper-navbar end -->
+
+    <!-- hero-image start -->
+    <header class="hero-image">
+        <h1>Pembayaran</h1>
+        <ul>
+            <li><a href="/Html-Files/index.html">Beranda</a></li>
+            /
+            <li>Pembayaran</li>
+        </ul>
+    </header>
+    <!-- hero-image end -->
+
+    <!-- content-container start -->
+    <main class="content-container">
+        <section id="checkout">
+            <!-- item box -->
+            <div class="item-box">
+                <div class="item-detail">
+                    <div class="item-title-detail">Peony's World <span class="price-qty"
+                            style="color: var(--red-color);">(Rp69.900,00 x 4)</span></div>
+                </div>
+                <div>Grand Total: <span class="grand-total" style="color: var(--red-color);">Rp559.200,00</span></div>
+            </div>
+
+            <!-- order form start -->
+            <form action="/main.page/order/order.html" method="get" id="checkout-form">
+                <div class="title">
+                    <h1>Form Pembayaran</h1>
+                </div>
+
+                <!-- input-container start -->
+                <div class="input-container">
+                    <!-- username -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="username"><i class="fas fa-user"></i></label>
+                            <input type="text" name="username" id="username" placeholder="Nama Pemesan"
+                                autocomplete="off" autofocus>
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="phone-number"><i class="fas fa-phone"></i></label>
+                            <input type="tel" name="phone number" id="phone-number" placeholder="Nomor Telepon"
+                                autocomplete="off">
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="email"><i class="fas fa-envelope"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Alamat Email" autocomplete="off"
+                                style="text-transform: none;">
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- payment method -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="payment-method"><i class="fa-solid fa-cash-register"></i></label>
+                            <select id="payment-method" name="payment method" autocomplete="off">
+                                <option selected disabled>Pilih Jenis Pembayaran</option>
+                                <option>Cash on delivery</option>
+                                <option>Gopay</option>
+                                <option>Ovo</option>
+                                <option>Dana</option>
+                                <option>BCA</option>
+                                <option>BRI</option>
+                                <option>BNI</option>
+                                <option>Mandiri</option>
+                            </select>
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- address -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="address"><i class="fas fa-home"></i></label>
+                            <input type="text" name="address" id="address"
+                                placeholder="Masukkan Alamat Lengkap Pengiriman" autocomplete="off">
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- subdistrict -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="subdistrict"><i class="fa-solid fa-building-wheat"></i></label>
+                            <input type="text" id="subdistrict" name="subdistrict" list="subdistrict-list"
+                                placeholder="Kelurahan" autocomplete="off" />
+                            <datalist id="subdistrict-list">
+                                <option value="Babakan Madang">
+                                <option value="Bojong Koneng">
+                                <option value="Cijayanti">
+                                <option value="Cipambuan">
+                                <option value="Citaringgul">
+                                <option value="Kadumangu">
+                                <option value="Karang Tengah">
+                                <option value="Sentul">
+                                <option value="Sumur Batu">
+                                <option value="Bojong Baru">
+                                <option value="Bojong Gede">
+                                <option value="Cimanggis">
+                                <option value="Kedung Waringin">
+                                <option value="Pabuaran">
+                                <option value="Ragajaya">
+                                <option value="Rawa Panjang">
+                                <option value="Susukan">
+                                <option value="Waringin Jaya">
+                                <option value="BPasir Buncir">
+                                <option value="Caringin">
+                                <option value="Ciderum">
+                                <option value="Ciherang Pondok">
+                                <option value="Cimande">
+                                <option value="Cimande Hilir">
+                                <option value="Cinagara">
+                                <option value="Lemah Duhur">
+                                <option value="Muara Jaya">
+                                <option value="Pancawati">
+                                <option value="Pasir Muncang">
+                                <option value="Tangkil">
+                                <option value="Babakan Raden">
+                                <option value="Bantar Kuning">
+                                <option value="Cariu">
+                                <option value="Cibatu Tiga">
+                                <option value="Cikutamahi">
+                                <option value="Karya Mekar">
+                                <option value="Kuta Mekar">
+                                <option value="Mekarwangi">
+                                <option value="Sukajadi">
+                                <option value="Tegal Panjang">
+                                <option value="Benteng">
+                                <option value="Bojong Jengkol">
+                                <option value="Bojong Rangkas">
+                                <option value="Ciampea">
+                                <option value="Ciampea Udik">
+                                <option value="Cibadak">
+                                <option value="Cibanteng">
+                                <option value="Cibuntu">
+                                <option value="Cicadas">
+                                <option value="Cihideung Ilir">
+                            </datalist>
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- district -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="district"><i class="fa-solid fa-building-wheat"></i></label>
+                            <input type="text" id="district" name="district" list="district-list"
+                                placeholder="Kecamatan" autocomplete="off" />
+                            <datalist id="district-list">
+                                <option value="Babakan Madang">
+                                <option value="Bojong Gede">
+                                <option value="Caringin">
+                                <option value="Cariu">
+                                <option value="Ciampea">
+                            </datalist>
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- cities -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="city"><i class="fa-solid fa-tree-city"></i></label>
+                            <input type="text" id="city" name="city" value="Bogor" disabled />
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- provinces -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="province"><i class="fa-solid fa-landmark-flag"></i></label>
+                            <input type="text" id="province" name="province" value="Jawa Barat" disabled />
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+
+                    <!-- postal codes -->
+                    <div class="input-group">
+                        <div class="input-section">
+                            <label for="postal-code"><i class="fa-solid fa-arrow-right-to-city"></i></label>
+                            <input type="text" id="postal-code" name="postal-code" list="postal-code-list"
+                                placeholder="Kode Pos" autocomplete="off">
+                            <datalist id="postal-code-list">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16810">
+                                <option value="16920">
+                                <option value="16922">
+                                <option value="16920">
+                                <option value="16923">
+                                <option value="16921">
+                                <option value="16920">
+                                <option value="16920">
+                                <option value="16920">
+                                <option value="16920">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16730">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16840">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                                <option value="16620">
+                            </datalist>
+                            <div class="input-notification">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- input-container end -->
+                <button type="submit" class="btn-order">Bayar Sekarang</button>
+            </form>
+            <!-- order form end -->
+        </section>
+    </main>
+    <!-- content-container end -->
+
+    <!-- footer-container start -->
+    <footer class="footer-container">
+        <ul class="footer-content">
+            <div class="footer-title">
+                <h2>Buku<span>pedia</span>.com</h2>
+            </div>
+            <li><i class="fa-solid fa-phone" style="cursor: auto;"></i> +62 897 4523 500</li>
+            <li><i class="fa-solid fa-envelope" style="cursor: auto;"></i> tanya@bukupedia.com</li>
+            <li><i class="fa-solid fa-house" style="cursor: auto;"></i> Bogor, Indonesia 16920</li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Blog Kami</p>
+            </div>
+            <li><a href="/main.page/index.html">Beranda</a></li>
+            <li><a href="/main.page/about/about.html">Tentang</a></li>
+            <li><a href="/main.page/shop/shop.html">Produk</a></li>
+            <li><a href="/main.page/contact/contact.html">Kontak</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Lainnya</p>
+            </div>
+            <li><a href="/user.form/sign.in/sign.in.html">Masuk</a></li>
+            <li><a href="/user.form/sign.up/sign.up.html">Registrasi</a></li>
+            <li><a href="/main.page/cart/cart.html">Keranjang</a></li>
+            <li><a href="/main.page/order/order.html">Pembelian</a></li>
+        </ul>
+        <ul class="footer-content">
+            <div class="footer-title">
+                <p>Ikuti Kami</p>
+            </div>
+            <li><a href="https://www.linkedin.com/in/dedi-indrawan-896b641b3/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/dediindra_one/" target="_blank">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="https://web.facebook.com/dediiiach" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+    <!-- footer-container end -->
+
+    <!-- footer-copyright start -->
+    <footer class="copyright">
+        All Right Reserved &copy; <span class="years"></span> <a href="https://linktr.ee/dediindra_one"
+            target="_blank">Buku<span>pedia</span>.com</a>
+        <a href="#"><span class="back-to-top"><i class="fa-solid fa-chevron-up"></i></span></a>
+    </footer>
+    <!-- footer-copyright end -->
+
+    <!-- connecting javascript file -->
+    <script src="/main.page/main.js"></script>
+    <script src="/main.page/checkout/checkout.js"></script>
+</body>
+
+</html>
